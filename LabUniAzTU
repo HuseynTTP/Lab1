@@ -1,0 +1,14 @@
+import math
+e=0.01
+x=float(input('x='))
+s=0
+d=x
+b=1
+a=math.sin(d)
+c=math.sin(x)
+while math.fabs(c)>e:
+    s=s+c   
+    d=d*x
+    b=b+1
+    c=a/b  
+print('S=',s)
